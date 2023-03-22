@@ -1,0 +1,15 @@
+name = "telegraf-cloudflare-test"
+main = "dist/index.js"
+# account_id = "ACCOUNT_ID"
+compatibility_date = "2023-03-07"
+
+# NOTE: I wish I could disable this but if I do, the build does not work.
+node_compat = true
+
+[build]
+command = "npm run build"
+watch_dir = "src"
+
+# This is a local environment
+[dev]
+port = 8080
